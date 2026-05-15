@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--studentName:LN, FN MI-->
+  <!--filename:sampleDOM_Cond_Loop2.html-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>To-Do List</h2>
+  <ul id="todoList">
+    <li><input type="checkbox"> Buy groceries</li>
+    <li><input type="checkbox"> Finish homework</li>
+    <li><input type="checkbox"> Clean the house</li>
+    <li><input type="checkbox"> Call Mom</li>
+  </ul>
+
+  <button onclick="updateToDoList()">Update List</button>
+
+  <script src="script7.js"></script>
+</body>
+</html>

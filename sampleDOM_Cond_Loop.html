@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--studentName:LN, FN MI-->
+  <!--filename:sampleDOM_Cond_Loop.html-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+</head>
+<body>
+<ul id="fruits"></ul>
+
+<script>
+  let fruits = ["Apple", "Banana", "Cherry"];
+
+  let list = document.getElementById("fruits");
+
+  for (let fruit of fruits) {
+    let item = document.createElement("li");
+    
+    if (fruit === "Banana") {
+      item.innerHTML = fruit + " 🍌"; // special for Banana
+    } else {
+      item.innerHTML = fruit;
+    }
+    
+    list.appendChild(item);
+  }
+</script>
+</body>
+</html>
+
+
